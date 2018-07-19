@@ -1,0 +1,1 @@
+docker run -d --name my_beansltakd_with_aurora -p 11301:11301 -p 3000:3000 turkeryildirim/beanstalkd:latest 

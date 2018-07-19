@@ -1,0 +1,8 @@
+apk update && apk add --no-cache supervisor beanstalkd wget tar
+wget https://github.com/xuri/aurora/releases/download/2.1/aurora_linux_amd64_v2.1.tar.gz
+tar -zxvf aurora_linux_amd64_v2.1.tar.gz
+rm aurora_linux_amd64_v2.1.tar.gz
+chown root:root aurora
+chmod u+x aurora
+mv aurora /usr/bin/aurora
+apk del wget tar 
